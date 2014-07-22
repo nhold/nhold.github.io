@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Nathan Hold by nhold</title>
+    <title>Nathan Hold</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -26,40 +26,48 @@
         <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Hey there, this is a simple outline of projects I have worked on or completed.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<h1>Videos</h1>
+<p><a href = "https://www.youtube.com/watch?v=12VMwSQV4vM">Valkyrie Trailer</a> && <a href = "http://bifroststudios.com.au/?app=valkyrie">Valkyrie</a></p>
+<p>Valkyrie is the major project I worked on while at Bifrost Studios, it took the good part of 2 years. At it's peak there were about 4 programmers, 6 artists and 1 designer
+  working on it. I learnt a lot about C# during the creation of this project with it consisting of very modular components that make it all up. I was the project manager
+  for the first year of the project as well as the only programmer, in the end I was project manager for the last 3 months of development.</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p><a href = "https://www.youtube.com/watch?v=RaeiBE4LtPI">Toasty Editor</a></p>
+<p>The Toasty Editor is my biggest personal project yet and I have been working on it for a year and a half now in my spare time as well as the engine. The editor is being built to be
+  multi-user, so in real time two developers can be working on the same scene or code. Seeing others work in real time is an interesting idea that I want to explore more and can have
+  many potential uses. My end goal for this is to be able to be a full game development suite, ranging from pre-production all the way to post-production. The base editor is
+  incredibly small and everything is added in via plugins (e.g. The SFMLplugin or Ogreplugin). The editor is written in C++ using wxWidgets as the GUI toolkit.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p><a href = "https://www.youtube.com/watch?v=TdNumETHS7c">Toasty Engine - SFML System Testing</a></p>
+  <p>The engine is the part of Toasty which has all the actual game functionality. It has a lot of sub-projects that make it up and that are pluggable for example
+    SFMLRenderSystem, Box2DPhysicsSystem, OgreRenderSystem, BulletPhysicsSystem and AngelScriptingSystem. The user can choose to only use what libraries they want to. So, they could
+    just link to SFMLRenderSystem and use the basic rect->rect collision to create a simple Pong game, or they can link to Ogre, Bullet and AngelScript systems which gives full components
+    to develop a physics based FPS with scripted events!
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+    There is lots to do on this, such as networking and GUI.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p><a href = "http://www.gamedev.net/blog/1135-disciple-of-jonato/">Toasty Blog</a></p>
+<p>This is my blog where I usually just talk about my development of Toasty, it's sometimes sparse and there may not be many updates in between but life is busy sometimes! Have a read
+  if you want to see how the internals of Toasty are working, it's a lot of reading though!</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p><a href = "https://github.com/nhold/wxWidgets">wxWidgets AUI Dynamic Notebook Branch</a></p>
+<p>For my Toasty Editor, I wanted a similar experience to Unity3D as the ability to drag out any window into it's own set of tabs is very powerful and is good for perfecting layouts
+for many different projects. So I started researching wxWidgets to see what was happening in that regard. In doing that I found a ~1 year old branch on gitorious which I began
+merging with the master branch of wxWidgets, this took around 3 months initially (There were many different issues to solve, wxWidgets gets updated VERY often.). But from there
+I posted the merge up on the wx-dev google group, where around 4 others joined the project to develop it, including the original creator of the feature. We are still developing it now
+whenever we can to try and get it merged into the master. We are currently working on backwards compatibility and documentation which are the final stages before attempting a merge.</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+
   </body>
 </html>
