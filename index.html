@@ -1,99 +1,226 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Nathan Hold</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Nathan Hold Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Nathan Hold</h1>
-        <p class="view"><a href="https://github.com/nhold">View My GitHub Profile</a></p>
-        <p class="view"><a href="http://www.gamedev.net/blog/1135-disciple-of-jonato/">View Blog</a></p>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Nathans Portfolio</h3>
 
-<p>Hey there, this is a simple outline of projects I have worked on or completed.</p>
+</head>
 
-<h1>Projects</h1>
-<p><a href = "https://www.youtube.com/watch?v=12VMwSQV4vM">Valkyrie Trailer</a> and <a href = "http://bifroststudios.com.au/?app=valkyrie">Valkyrie</a></p>
-<a href = "https://www.youtube.com/watch?v=12VMwSQV4vM"><img src = "images/valkyrie.png" /></a>
-<p></p>
-<p>Valkyrie is the major project I worked on while at Bifrost Studios, it took the good part of 2 years. At it's peak there were about 4 programmers, 6 artists and 1 designer
-  working on it.</p>
+<body>
 
-<p>I learnt a lot about C# during the creation of this project with it consisting of very modular components that make it all up. I was the project manager
-  for the first year of the project as well as the only programmer, in the end I was project manager and sole programmer for the last 3 months of development.</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Games</a>
+                    </li>
+                    <li>
+                        <a href="#">Websites</a>
+                    </li>
+                    <li>
+                        <a href="#">Fun</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-<p><a href = "https://www.youtube.com/watch?v=RaeiBE4LtPI">Toasty Editor</a></p>
-<a href = "https://www.youtube.com/watch?v=RaeiBE4LtPI"><img src = "images/ToastyEditor.png" /></a>
-<p></p>
-<p>The Toasty Editor is my biggest personal project yet and I have been working on it for a year and a half now in my spare time as well as the engine. The editor is being built to be
-  multi-user, so in real time two developers can be working on the same scene or code. Seeing others work in real time is an interesting idea that I want to explore more and think can have
-  many potential uses.</p>
+    <!-- Page Content -->
+    <div class="container">
 
-<p>My end goal for this is to be able to be a full game development suite, ranging from pre-production(Design, Project Managment) all the way to post-production. The base editor is
-  incredibly small and everything is added in via plugins (e.g. The SFMLplugin or Ogreplugin). The editor is written in C++ using wxWidgets as the GUI toolkit. This was due to my annoyance
-  at the Unity editor which when deploying to mobile devices has a large footprint with an empty scene and no code \ art, so Toasty users will only pay for what they use.</p>
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Games
+                    <small>Completed Game Projects</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
 
-<p><a href = "https://www.youtube.com/watch?v=TdNumETHS7c">Toasty Engine</a></p>
-<a href = "https://www.youtube.com/watch?v=TdNumETHS7c"><img src = "images/ToastyEngine.png" /></a>
-<p></p>
-  <p>The engine is the part of Toasty which has all the actual game functionality. It has a lot of sub-projects that make it up and that are pluggable for example
-    SFMLRenderSystem, Box2DPhysicsSystem, OgreRenderSystem, BulletPhysicsSystem and AngelScriptingSystem. The user can choose to only use what libraries they want to. So, they could
-    just link to SFMLRenderSystem and use the basic rect->rect collision to create a simple Pong game, or they can link to Ogre, Bullet and AngelScript systems which gives full components
-    to develop a physics based FPS with scripted events!
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://nhold.github.io/images/iosValkyrie.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Valkyrie</h3>
+                <h4>3D Story Runner and Infinite Runner</h4>
+                <p>A large mobile game developed over the course of a year and a half with 15 developers. I was project manager and one of the programmers on the team.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
 
-    There is lots to do on this, such as networking and GUI, have a read in my blog to get a better understanding of it.</p>
+        <hr>
 
-<p><a href = "http://www.gamedev.net/blog/1135-disciple-of-jonato/">Toasty Blog</a></p>
-<p>This is my blog where I usually just talk about my development of Toasty, it's sometimes sparse and there may not be many updates in between but life is busy sometimes! Have a read
-  if you want to see how the internals of Toasty are working, it's a lot of reading though!</p>
+        <!-- Project Two -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Project Two</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
 
+        <hr>
 
-<p><a href = "https://github.com/nhold/wxWidgets">wxWidgets AUI Dynamic Notebook Branch</a></p>
-<p>For my Toasty Editor, I wanted a similar experience to Unity3D as the ability to drag out any window into it's own set of tabs is very powerful and is good for perfecting layouts
-for many different projects. So I started researching wxWidgets to see what was happening in that regard.</p>
+        <!-- Project Three -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Project Three</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
 
-<p>In doing that I found a ~1 year old branch on gitorious which I began merging with the master branch of wxWidgets, this took around 3 months initially (There were many different issues
-  to solve, wxWidgets gets updated VERY often.). But from there I posted the merge up on the wx-dev google group, where around 4 others joined the project to develop it, including the original
-  creator of the feature. We are still developing it now trying to get it merged into the master branch of wxWidgets. We are currently working on backwards compatibility and documentation which
-  are the final stages before attempting a merge.</p>
+        <hr>
 
-<p>You can see this working in my Toasty Editor video above.</p>
+        <!-- Project Four -->
+        <div class="row">
 
-<p><a href = "https://www.youtube.com/watch?v=Nz5QJh5v5L0">Brains</p>
-<img src = "images/brains.png" /></a>
-<p></p>
-<p>Brains was the final project my team (The 3 Amigos) developed for Qantm, it was a team of Me(Programmer, Project Manager), Michael Sampson(Programmer) and Lynden Nowland(Artist).
-  we all shared the design aspect of the game during it's development. The game was written using C++, Ogre3D and the AHH game framework. We wrote our own custom pathfinding,
-  flocking \ avoiding behavoiur, GUI system and editor to accompany the game. This game won the QANTM Game of the Year in 2010 up against 5 other contenders.</p>
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Project Four</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
 
-  <p>It's a simple game, where you control a horde of zombies and try to eat as many humans as possible while avoiding traps that the pesky humans have placed.</p>
+        <hr>
 
-  <p>Cupcake Game</p>
-  <img src = "images/CupcakeGame.jpg" />
-  <p></p>
-  <p>The cupcake game was something developed at Bifrost Studios for the South Bank Corporation for use during it's Food and Wine festival, the image is of me manning the station we had with a
-    colleauge. It was a multiplayer co-operation game where 3 children would try and get each of their ingredients into each tray, the goal was to fill up as many as they could before the timer ran out.</p>
+        <!-- Project Five -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Project Five</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
 
-    <p>The game ran on iPads and I had two servers sitting on-site just in case one server messed up. I was tasked with scoping, developing and communicating the project details to the clients</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!-- /.container -->
 
-  </body>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
