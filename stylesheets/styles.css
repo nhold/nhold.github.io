@@ -43,6 +43,18 @@
     padding: 15px;
 }
 
+.box {
+    width: 250px;
+    height: 150px;
+    position: relative;
+    padding: 15px;
+    background-color: #141414;
+    color: #999999;
+    border-radius: 25px;
+
+}
+
+
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
     margin-right: -250px;
@@ -138,15 +150,15 @@
 
 
 .triangle-demo {
-  width: 0;
-  height: 0;
+  width: 100px;
+  height: 120px;
   margin: 0 auto;
-  background: transparent;
+  background: blue;
   border-top: 10px solid #EE7C31;
   border-left: 10px solid #F5D97B; 
   border-bottom: 10px solid #D94948;
   border-right: 10px solid #8DB434;
-  /*border-left-color: transparent;*/
+  border-left-color: transparent;
   border-right-color: transparent;
   border-top-color: transparent;
   border-bottom-color: transparent;
