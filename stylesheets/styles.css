@@ -43,18 +43,6 @@
     padding: 15px;
 }
 
-.box {
-    width: 250px;
-    height: 150px;
-    position: relative;
-    padding: 15px;
-    background-color: #141414;
-    color: #999999;
-    border-radius: 25px;
-
-}
-
-
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
     margin-right: -250px;
@@ -149,24 +137,31 @@
 }
 
 
-.triangle-demo {
-  width: 100px;
-  height: 120px;
+.triangle-up {
+  width: 0px;
+  height: 0px;
   margin: 0 auto;
-  background: blue;
+  background: transparent;
   border-top: 10px solid #EE7C31;
   border-left: 10px solid #F5D97B; 
-  border-bottom: 10px solid #D94948;
+  border-bottom: 10px solid #141414;
   border-right: 10px solid #8DB434;
   border-left-color: transparent;
   border-right-color: transparent;
   border-top-color: transparent;
-  border-bottom-color: transparent;
+  /*border-bottom-color: transparent;*/
 }
 
-.inline {
-  display: inline;
+.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 15px;
+    background-color: #141414;
+    color: #999999;
+    border-radius: 25px;
 }
+
 
 .circular {
   width: 300px;
