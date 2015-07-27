@@ -25,7 +25,7 @@
         </li>
         <li>
           <a href="index.html">Myself</a>
-          <a href="personal.html">Personal Projects</a>
+          <a href="#">Personal Projects</a>
             <div class="pr"><a href="toasty.html">Toasty</a></div>
             <div class="pr"><a href="sfmlp.html">SFMLP</a></div>
             <div class="pr"><a href="ubstatistics.html">ubStatistics</a></div>
@@ -57,21 +57,35 @@
     <div class="triangle-up"></div>
 
     <div class="box">
-    <center><h3>SFMLPlus</h3></center>
-      <p>SFMLP is a module developed on top of SFML in C++. It adds the following features:</p>
+    <center><h3>Toasty</h3></center>
+      <p>Toasty is a huge project, it is my attempt to re-create my own Unity engine that has the features I want! It uses a variety of my own libraries as well as a multitude of others. Toasty is split up into several projects including the Toasty framework and the Toasty Editor. The Toasty framework is some ECS base code that the editor and player will be built on.</p>
       
-      <p><h4>Transform Heirarchy</h4></p>
+      <p>At the moment it is going through a huge refactor but here are the features that I have:</p>
 
-      <p>The way most SFML games handle heirarchy is to combine the render order and the transform heirarchy, I have developed my module such that they are seperated. Therefore you can have children of a transform where the sprite is rendered on top of the parent.</p>
+      <ul>
+      <li>Basic ECS Framework</li>
+      <li>Framework and Editor Plugin System</li>
+      <li>Basic Serialisation System (Easily pluggable for different serialisation types)</li>
+      <li>SFML Render System and Editor Plugin</li>
+        <ul>
+          <li>Basic View manipulation in editor</li>
+          <li>Basic mouse based sprite manipulation in editor</li>
+        </ul>
+      <li>Ogre Render System and Editor Plugin</li>
+      <li>Box2D Physics System</li>
+      <li>Bullet Physics System</li>
+      <li>AngelScript Scripting System</li>
+      <li>Basic File System Listening</li>
+      <li>Basic Editor Networking</li>
+      </ul>
 
-      <center><p><video autoplay loop>
-      <source src="videos/TransformTest.webm">
-      Your browser does not support the video tag.
-    </video></p></center>
+      <p>Here are a few really old editor images and <a href="https://www.youtube.com/watch?v=RaeiBE4LtPI">click here for an old video!</a></p>
+      <center>
+      <a href="images/ToastyEditor.png"><img src="images/ToastyEditor.png"></a>
+      <p></p>
+      <a href="images/ToastyEditor2.png"><img src="images/ToastyEditor2.png"></a>
+      </center>
 
-    <p><h4>Render System with Culling, Named Layers and Depth</h4></p>
-
-      <p>Depth isn't built into SFML and the Z-Buffer doesn't work too well for it so I implemented a two step sorting algorithm using named layers and sorting depth to get the final render order. On top of that it has a culling system which can be easily extended to cull in different ways (The default is just a simple quadtree).</p>
     </div>
 
    </div>

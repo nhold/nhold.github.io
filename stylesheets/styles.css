@@ -175,3 +175,5 @@
   background: url(../images/pic.jpg) no-repeat;
 
   }
+
+  img { max-width: 50%; height: auto; }

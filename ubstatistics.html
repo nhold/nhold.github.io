@@ -25,10 +25,10 @@
         </li>
         <li>
           <a href="index.html">Myself</a>
-          <a href="personal.html">Personal Projects</a>
+          <a href="#">Personal Projects</a>
             <div class="pr"><a href="toasty.html">Toasty</a></div>
             <div class="pr"><a href="sfmlp.html">SFMLP</a></div>
-            <div class="pr"><a href="ubstatistics.html">ubStatistics</a></div>
+            <div class="pr"><a href="ubStatistics.html">ubStatistics</a></div>
             <div class="pr"><a href="elontrias.html">Elontrias</a></div>
             <div class="pr"><a href="tilemap.html">Unity Tile Map Editor</a></div>
             <div class="pr"><a href="prefabutility.html">Unity Prefab Creation Utility</a></div>
@@ -57,22 +57,15 @@
     <div class="triangle-up"></div>
 
     <div class="box">
-    <center><h3>SFMLPlus</h3></center>
-      <p>SFMLP is a module developed on top of SFML in C++. It adds the following features:</p>
+    <center><h3>ubStatistics</h3></center>
+      <p>This is a plugin for Unity I developed to easily handle statistics, especially useful for RPGs!</p>
       
-      <p><h4>Transform Heirarchy</h4></p>
 
-      <p>The way most SFML games handle heirarchy is to combine the render order and the transform heirarchy, I have developed my module such that they are seperated. Therefore you can have children of a transform where the sprite is rendered on top of the parent.</p>
+      <p>The main scripts used are shown below and facilitates an easy way to create and add stats as well as view it's current value alongside it's max and min. It allows custom actions to occur when a change occurs on the stats value or when it reaches the max or min values. The user can also save default stats for use when creating a few different prefab types so you can save a set of stats out and load it onto another statistic container easily using the "Default" and "Set as Default" buttons. It also provides an easy way to test the networking of the stats with the "Network Update" button.</p>
 
-      <center><p><video autoplay loop>
-      <source src="videos/TransformTest.webm">
-      Your browser does not support the video tag.
-    </video></p></center>
+      <p>The network statistics script will automatically update networks when a stat changes so it updates on clients and server.</p>
 
-    <p><h4>Render System with Culling, Named Layers and Depth</h4></p>
-
-      <p>Depth isn't built into SFML and the Z-Buffer doesn't work too well for it so I implemented a two step sorting algorithm using named layers and sorting depth to get the final render order. On top of that it has a culling system which can be easily extended to cull in different ways (The default is just a simple quadtree).</p>
-    </div>
+      <center><img src="images/statcontainer.png"></center>
 
    </div>
 </body>
