@@ -28,8 +28,8 @@
           <a href="#">Personal Projects</a>
             <div class="pr"><a href="toasty.html">Toasty</a></div>
             <div class="pr"><a href="sfmlp.html">SFMLP</a></div>
-            <div class="pr"><a href="ubdialogue.html">ubDialogue</a></div>
             <div class="pr"><a href="ubstatistics.html">ubStatistics</a></div>
+            <div class="pr"><a href="ubdialogue.html">ubDialogue</a></div>
             <div class="pr"><a href="elontrias.html">Elontrias</a></div>
             <div class="pr"><a href="tilemap.html">Unity Tile Map Editor</a></div>
             <div class="pr"><a href="prefabutility.html">Unity Prefab Creation Utility</a></div>
@@ -37,12 +37,12 @@
             <div class="pr"><a href="zombiezap.html">Zombie Zap</a></div>
             <div class="pr"><a href="astrojump.html">Astro Jump</a></div>
             <div class="pr"><a href="lootncrabs.html">Loot'n Crabs</a></div>
-          <a href="#">Work Projects - Unity</a>
+          <a href="workunity.html">Work Projects - Unity</a>
             <div class="pr"><a href="valkyrie.html">Valkyrie</a></div>
             <div class="pr"><a href="cupcakegame.html">Cupcake Game</a></div>
             <div class="pr"><a href="findersseekers.html">Finders Seekers</a></div>
             <div class="pr"><a href="findersseekers.html">Hot Tail</a></div>
-          <a href="#">Work Projects - Websites</a>
+          <a href="workweb.html">Work Projects - Websites</a>
             <div class="pr"><a href="valkyrie.html">The Clean Chef</a></div>
             <div class="pr"><a href="cupcakegame.html">The Lipo Lounge</a></div>
             <div class="pr"><a href="cupcakegame.html">Shimmer</a></div>
@@ -59,14 +59,15 @@
 
     <div class="box">
     <center><h3>ubStatistics</h3></center>
-      <p>This is a plugin for Unity I developed to easily handle statistics, especially useful for RPGs!</p>
+      <p>This is a plugin for Unity I developed to easily write dialogues</p>
       
 
-      <p>The main scripts used are shown below and facilitates an easy way to create and add stats as well as view it's current value alongside it's max and min. It allows custom actions to occur when a change occurs on the stats value or when it reaches the max or min values. The user can also save default stats for use when creating a few different prefab types so you can save a set of stats out and load it onto another statistic container easily using the "Default" and "Set as Default" buttons. It also provides an easy way to test the networking of the stats with the "Network Update" button.</p>
+      <p>I started the idea from seeing this thread on the Unity forums: <a href="http://forum.unity3d.com/threads/simple-node-editor.189230">simple node editor</a> and used it as a 
+      jumping board to write my own dialogue editor.</p>
 
-      <p>The network statistics script will automatically update networks when a stat changes so it updates on clients and server.</p>
+      <p>The plugin also comes with a simple to use API to facilitate usage of it, you simply call void GetNextConnections(out List<DialogueNode> connections) and handle the choices if there are any or just display the first next text.</p>
 
-      <center><img src="images/statcontainer2.png"></center>
+      <center><img src="images/dialogueTest.png"></center>
 
    </div>
 </body>
