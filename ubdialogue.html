@@ -1,43 +1,13 @@
-<!DOCTYPE html>
-<html>
+---
+layout: page
+title: ubDialogue
+---
+<p>This is a plugin for Unity I developed to easily write dialogues.</p>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-  <title>Nathan Hold</title>
+<p>I started the idea from seeing this thread on the Unity forums: <a href="http://forum.unity3d.com/threads/simple-node-editor.189230">simple node editor</a> and used it as a 
+jumping board to write my own dialogue editor.</p>
 
-  <link href="./stylesheets/bootstrap.css" rel="stylesheet">
-  <link  href="./stylesheets/styles.css" rel='stylesheet'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="./javascript/bootstrap.min.js"></script>
-  <script src="./javascript/script.js"></script>
-</head>
+<p>The plugin also comes with a simple to use API to facilitate usage of it, you simply call void GetNextConnections(out List<DialogueNode> connections) and handle the choices if there are any or just display the first next text.</p>
 
-<body>
-
-  <div id="wrapper">
-    {% include sidebar.html}
-          
-    <div id="page-content-wrapper">
-
-    <center><div class="circular"></div></center>
-
-    <div class="triangle-up"></div>
-
-    <div class="box">
-    <center><h3>ubDialouge</h3></center>
-      <p>This is a plugin for Unity I developed to easily write dialogues.</p>
-      
-
-      <p>I started the idea from seeing this thread on the Unity forums: <a href="http://forum.unity3d.com/threads/simple-node-editor.189230">simple node editor</a> and used it as a 
-      jumping board to write my own dialogue editor.</p>
-
-      <p>The plugin also comes with a simple to use API to facilitate usage of it, you simply call void GetNextConnections(out List<DialogueNode> connections) and handle the choices if there are any or just display the first next text.</p>
-
-      <center><img src="images/dialogueTest.png"></center>
-
-   </div>
-</body>
-
-</html>
+<center><img src="images/dialogueTest.png"></center>
