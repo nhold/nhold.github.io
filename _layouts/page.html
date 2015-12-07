@@ -15,35 +15,33 @@
         </header>
 
          <div id="wrapper">
-   {% include sidebar.html %}
-   <div id="page-content-wrapper">
-    <div class="alert alert-warning" role="alert">
-      This portfolio is currently being worked on!
-    </div>
-    <center><div class="circular"></div></center>
+            {% include sidebar.html %}
+            <div id="page-content-wrapper">
+                
+                <div class="alert alert-warning" role="alert">
+                    This portfolio is currently being worked on!
+                </div>
+                
+                <center><div class="circular"></div></center>
 
-    <div class="triangle-up"></div>
+                <div class="triangle-up"></div>
+            
+                <div class="box">
+                <main>
+                    <center><h3>{{ title }}</h3></center>
+                    {{ content }}
 
-            <main>
-<div class="box">
-        <center><h3>{{ title }}</h3></center>
-            {{ content }}
-    </div>
-</div>
-
-        </main>
-
-        <footer>
-            <hr />
-            <p>&copy; <time>2012</time> {{ site.author }}</p>
-        </footer>
+                </main>
+                
+                <footer>
+                <hr />
+                    <p>&copy; <time>2012</time> {{ site.author }}</p>
+                </footer>
+            </div>
+        </div>
 
         <script src="{{site.baseurl}}/javascript/bootstrap.js"></script>
         <script src="{{site.baseurl}}/javascript/scripts.js"></script>
     </body>
 
 </html>
-
-<nav>
-
-</nav>
