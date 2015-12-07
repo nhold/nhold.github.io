@@ -1,8 +1,20 @@
----
-layout: default
----
-<nav>
- <div id="wrapper">
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+        <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/styles.css" />
+		<link rel="stylesheet" href="{{site.baseurl}}/stylesheets/bootstrap.css" />
+        <meta name="description" content="{{site.description}}"/>
+        <meta name="author" content="{{site.author}}"/>
+    </head>
+
+    <body>
+        <header>
+        </header>
+
+         <div id="wrapper">
    {% include sidebar.html %}
    <div id="page-content-wrapper">
     <div class="alert alert-warning" role="alert">
@@ -12,9 +24,26 @@ layout: default
 
     <div class="triangle-up"></div>
 
-    <div class="box">
+            <main>
+<div class="box">
         <center><h3>{{ title }}</h3></center>
-        {{ content }}
+            {{ content }}
     </div>
 </div>
+
+        </main>
+
+        <footer>
+            <hr />
+            <p>&copy; <time>2012</time> {{ site.author }}</p>
+        </footer>
+
+        <script src="{{site.baseurl}}/javascript/bootstrap.js"></script>
+        <script src="{{site.baseurl}}/javascript/scripts.js"></script>
+    </body>
+
+</html>
+
+<nav>
+
 </nav>
