@@ -1,77 +1,45 @@
-<!DOCTYPE html>
-<html>
+---
+layout: page
+title: Toasty
+---
+<p>Toasty is a huge project, it is my attempt to re-create my own Unity engine that has the features I want! It uses a variety of my own libraries as well as a multitude of others. Toasty is split up into several projects including the Toasty framework and the Toasty Editor. The Toasty framework is some ECS base code that the editor and player will be built on.</p>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<p>At the moment it is going through a huge refactor but here are the features that I have:</p>
 
-  <title>Nathan Hold</title>
+<ul>
+<li>Basic ECS Framework</li>
+  <ul>
+    <li>Outboard component based systems</li>
+    <li>Managed system updating depth</li>
+  </ul>
+<li>Framework and Editor Plugin System</li>
+<li>Basic Serialisation System (Easily pluggable for different serialisation types)</li>
+<li>SFML Render System and Editor Plugin</li>
+  <ul>
+    <li>Basic View manipulation in editor</li>
+    <li>Basic mouse based sprite manipulation in editor</li>
+    <li>Sprite component</li>
+  </ul>
+<li>Ogre Render System and Editor Plugin</li>
+  <ul>
+    <li>Basic View manipulation in editor</li>
+    <li>Basic mouse based sprite manipulation in editor</li>
+    <li>Mesh component</li>
+    <li>Light component</li>
+  </ul>
+<li>Box2D Physics System</li>
+<li>Bullet Physics System</li>
+<li>AngelScript Scripting System</li>
+<li>Basic File System Listening</li>
+<li>Basic Editor Networking</li>
+<li>Game Math Library</li>
+</ul>
 
-  <link href="./stylesheets/bootstrap.css" rel="stylesheet">
-  <link  href="./stylesheets/styles.css" rel='stylesheet'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="./javascript/bootstrap.min.js"></script>
-  <script src="./javascript/script.js"></script>
-</head>
-
-<body>
-
-  <div id="wrapper">
-    {% include sidebar.html}
-          
-    <div id="page-content-wrapper">
-
-    <center><div class="circular"></div></center>
-
-    <div class="triangle-up"></div>
-
-    <div class="box">
-    <center><h3>Toasty</h3></center>
-      <p>Toasty is a huge project, it is my attempt to re-create my own Unity engine that has the features I want! It uses a variety of my own libraries as well as a multitude of others. Toasty is split up into several projects including the Toasty framework and the Toasty Editor. The Toasty framework is some ECS base code that the editor and player will be built on.</p>
-      
-      <p>At the moment it is going through a huge refactor but here are the features that I have:</p>
-
-      <ul>
-      <li>Basic ECS Framework</li>
-       <ul>
-          <li>Outboard component based systems</li>
-          <li>Managed system updating depth</li>
-        </ul>
-      <li>Framework and Editor Plugin System</li>
-      <li>Basic Serialisation System (Easily pluggable for different serialisation types)</li>
-      <li>SFML Render System and Editor Plugin</li>
-        <ul>
-          <li>Basic View manipulation in editor</li>
-          <li>Basic mouse based sprite manipulation in editor</li>
-          <li>Sprite component</li>
-        </ul>
-      <li>Ogre Render System and Editor Plugin</li>
-        <ul>
-          <li>Basic View manipulation in editor</li>
-          <li>Basic mouse based sprite manipulation in editor</li>
-          <li>Mesh component</li>
-          <li>Light component</li>
-        </ul>
-      <li>Box2D Physics System</li>
-      <li>Bullet Physics System</li>
-      <li>AngelScript Scripting System</li>
-      <li>Basic File System Listening</li>
-      <li>Basic Editor Networking</li>
-      <li>Game Math Library</li>
-      </ul>
-
-      <p>Here are a few really old editor images and <a href="https://www.youtube.com/watch?v=RaeiBE4LtPI">click here for an old video!</a></p>
-      <center>
-      <a href="images/ToastyEditor.png"><img src="images/ToastyEditor.png"></a>
-      <p></p>
-      <a href="images/ToastyEditor2.png"><img src="images/ToastyEditor2.png"></a>
-      <p></p>
-      <a href="images/ToastyEngine.png"><img src="images/ToastyEngine.png"></a>
-      </center>
-
-    </div>
-
-   </div>
-</body>
-
-</html>
+<p>Here are a few really old editor images and <a href="https://www.youtube.com/watch?v=RaeiBE4LtPI">click here for an old video!</a></p>
+<center>
+<a href="images/ToastyEditor.png"><img src="images/ToastyEditor.png"></a>
+<p></p>
+<a href="images/ToastyEditor2.png"><img src="images/ToastyEditor2.png"></a>
+<p></p>
+<a href="images/ToastyEngine.png"><img src="images/ToastyEngine.png"></a>
+</center>
