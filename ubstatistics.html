@@ -1,42 +1,12 @@
-<!DOCTYPE html>
-<html>
+---
+layout: page
+title: ubStatistics
+---
+<p>This is a plugin for Unity I developed to easily handle statistics, especially useful for RPGs!</p>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-  <title>Nathan Hold</title>
+<p>The main scripts used are shown below and facilitates an easy way to create and add stats as well as view it's current value alongside it's max and min. It allows custom actions to occur when a change occurs on the stats value or when it reaches the max or min values. The user can also save default stats for use when creating a few different prefab types so you can save a set of stats out and load it onto another statistic container easily using the "Default" and "Set as Default" buttons. It also provides an easy way to test the networking of the stats with the "Network Update" button.</p>
 
-  <link href="./stylesheets/bootstrap.css" rel="stylesheet">
-  <link  href="./stylesheets/styles.css" rel='stylesheet'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="./javascript/bootstrap.min.js"></script>
-  <script src="./javascript/script.js"></script>
-</head>
+<p>The network statistics script will automatically update networks when a stat changes so it updates on clients and server.</p>
 
-<body>
-
-  <div id="wrapper">
-    {% include sidebar.html}
-          
-    <div id="page-content-wrapper">
-
-    <center><div class="circular"></div></center>
-
-    <div class="triangle-up"></div>
-
-    <div class="box">
-    <center><h3>ubStatistics</h3></center>
-      <p>This is a plugin for Unity I developed to easily handle statistics, especially useful for RPGs!</p>
-      
-
-      <p>The main scripts used are shown below and facilitates an easy way to create and add stats as well as view it's current value alongside it's max and min. It allows custom actions to occur when a change occurs on the stats value or when it reaches the max or min values. The user can also save default stats for use when creating a few different prefab types so you can save a set of stats out and load it onto another statistic container easily using the "Default" and "Set as Default" buttons. It also provides an easy way to test the networking of the stats with the "Network Update" button.</p>
-
-      <p>The network statistics script will automatically update networks when a stat changes so it updates on clients and server.</p>
-
-      <center><img src="images/statcontainer2.png"></center>
-
-   </div>
-</body>
-
-</html>
+<center><img src="images/statcontainer2.png"></center>
