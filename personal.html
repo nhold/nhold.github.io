@@ -2,22 +2,25 @@
 layout: page
 title: Personal
 ---
+
 <div class="row">
+{% for project in site.data.projects %}
     <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-            <a href="toasty.html" class="thumbnail">
-                <img class="img-responsive" src="images\ToastyEditor.png" alt="">
+            <a href="{{ project.link }}" class="thumbnail">
+                <img class="img-responsive" src="{{ projects.image }}" alt="">
             </a>
                 <center>
-                <h3>Toasty</h3>
+                <h3>{{ project.name }}</h3>
                 </center>
                 <ul>
-                    <li>C++14</li>
-                    <li>Outboard component based</li>
-                    <li>Highly Pluggable</li>
+                    {% for dotPoints in project.descriptions %}
+                    <li>{{ dotPoints }}</li>
+                    {% endfor %}
                 </ul>
 
         </div>
         </div>
     </div>
+{% endfor %}
 </div>
