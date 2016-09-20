@@ -177,3 +177,8 @@
   }
 
   img { max-width: 50%; height: auto; }
+
+  .caption .darkthumb {
+      background-color: #272727;
+      color: #dadada;
+  }
