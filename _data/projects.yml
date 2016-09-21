@@ -29,20 +29,19 @@
 
 - name: Zombie Zap
   image: images/zombiezap.png
-  description: <li>Test</li>
+  description: <li>Unity 2D Mobile game</li>
   linkname: zombiezap.html
 
 - name: Astro Jump
   image: images/astrojump.png
-  description: <li>Web game (play it here!)</li>  
+  description: <li>Free Web Game!</li> 
   linkname: astrojump.html
 
 - name: "Loot'n Crabs"
   image: images/lootncrabs.png
-  description: <li>Web game (play it here!)</li>  
+  description: <li>Free Web Game</li>
   linkname: lootncrabs.html
 
 - name: "Brains"
   image: images/brains.png
   description: <li>C++</li><li>Ogre3D</li><li>Best Game QANTM 2012</li><li>Custom flocking AI.</li>
-  linkname: lootncrabs.html
