@@ -10,7 +10,7 @@ title: Personal Projects
                 {% if project.linkname %}
                 <a href="{{ project.linkname }}" class="thumbnail">
                 {% else %}
-                <a href="{{ project.name }}.html" class="thumbnail">
+                <a href="{{ project.name | downcase }}.html" class="thumbnail">
                 {% endif %}
                 <img class="img-thumbnail" style="height:300px" src="{{ project.image }}" alt="">
             </a>
