@@ -182,3 +182,7 @@
       background-color: #272727;
       color: #dadada;
   }
+
+  .thumbnail .img {
+      height: "300px";
+  }
