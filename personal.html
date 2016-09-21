@@ -1,26 +1,29 @@
 ---
 layout: page
-title: Personal
+title: Personal Projects
 ---
 
-<div class="row">
 {% for project in site.data.projects %}
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <a href="{{ project.link }}" class="thumbnail">
+{% cycle 'add row' : '<div class="row">', nil, nil %}
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                {% if project.linkname %}
+                <a href="{{ project.linkname }}" class="thumbnail">
+                {% else %}
+                <a href="{{ project.name }}.html" class="thumbnail">
+                {% endif %}
                 <img class="img-responsive" src="{{ project.image }}" alt="">
             </a>
                 <center>
                 <h3>{{ project.name }}</h3>
                 </center>
                 <ul>
-                    {% for dotPoints in project.descriptions %}
-                    <li>{{ dotPoints }}</li>
-                    {% endfor %}
+                    {{ project.description }}
                 </ul>
+            </div>
+        </div>
+{% cycle 'end row' : nil, nil, '</div>' %}
+{% endfor%}
+{% cycle 'end row' : nil, '</div>', '</div>', '</div>' %}
 
-        </div>
-        </div>
-    </div>
-{% endfor %}
-</div>
+
