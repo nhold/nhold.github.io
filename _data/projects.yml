@@ -45,3 +45,8 @@
 - name: "Brains"
   image: images/brains.png
   description: <li>C++</li><li>Ogre3D</li><li>Best Game QANTM 2012</li><li>Custom flocking AI.</li>
+
+- name: "1942 Clone"
+  image: images/1942.png
+  linkname: "https://github.com/nhold/1942"
+  description: <li>Unity game</li><li>Open source</li>
