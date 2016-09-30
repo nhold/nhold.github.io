@@ -6,17 +6,13 @@
         <li>
             <a href="index.html">Myself</a>
             <a href="personal.html">Personal Projects</a>
-            <div class="pr"><a href="toasty.html">Toasty</a></div>
-            <div class="pr"><a href="sfmlp.html">SFMLP</a></div>
-            <div class="pr"><a href="ubdialogue.html">ubDialogue</a></div>
-            <div class="pr"><a href="ubstatistics.html">ubStatistics</a></div>
-            <div class="pr"><a href="elontrias.html">Elontrias</a></div>
-            <div class="pr"><a href="tilemap.html">Unity Tile Map Editor</a></div>
-            <div class="pr"><a href="prefabutility.html">Unity Prefab Creation Utility</a></div>
-            <div class="pr"><a href="zombiezap.html">Zombie Zap</a></div>
-            <div class="pr"><a href="astrojump.html">Astro Jump</a></div>
-            <div class="pr"><a href="lootncrabs.html">Loot'n Crabs</a></div>
-            <div class="pr"><a href="brains.html">Brains</a></div>
+            {% for project in site.data.projects %}
+                {% if project.linkname %}
+                    <div class="pr"><a href="{{ project.linkname }}">{{ project.name }}</a></div>
+                {% else %}
+                    <div class="pr"><a href="{{ project.name }}.html">{{ project.name }}</a></div>
+                {% endif %}
+            {% endfor %}
             <a href="workunity.html">Work Projects - Unity</a>
             <div class="pr"><a href="valkyrie.html">Valkyrie</a></div>
             <div class="pr"><a href="cupcakegame.html">Cupcake Game</a></div>
