@@ -1,52 +1,64 @@
 - name: Toasty
   image: images/ToastyEditor.png
   description: <li>Outboard Component Based</li><li>Modern C++14</li><li>Highly Pluggable</li><li>Useable as Library or Editor</li>
+  category: C++ Library
 
 - name: SFMLP
   image: images/SFMLPAPI.png
   description: <li>Modern C++14</li><li>Better transform heirarchy</li><li>Layered rendering with pluggable culling</li>
-
+  category: C++ Library
+  
 - name: ubDialogue
   image: images/dialogueTest.png
   description: "<li>Dialogue tree structure</li><li>Custom actions on dialogue</li><li>Set global variables from dialogue</li>"
+  category: Unity Library
 
 - name: ubStatistics
   image: images/statcontainer2.png
   description: "<li>Editor and Runtime stats</li><li>Seperation of stats and regeneration</li><li>Custom inspectors</li>"
+  category: Unity Library
 
 - name: Elontrias
   image: "http://i.imgur.com/Z2QybV3.gif"
   description: <li>Unity 2D RPG</li><li>Multiplayer through UNet</li>
+  category: Unity Game
 
 - name: ubTilemap
   image: "http://www.gamedev.net/uploads/blogs/monthly_10_2014/blogentry-102320-0-31923100-1414558735.png"
   description: <li>Pluggable tool system</li><li>Tiles are just GameObjects</li><li>Seperate data structure for tilesets</li>
   linkname: tilemap.html
+  category: Unity Library
 
 - name: ubPrefabCreationUtil
   image: images/prefabutil.png
   description: <li>Test</li>
+  category: Unity Library
 
 - name: Zombie Zap
   image: images/zombiezap.png
   description: <li>Unity 2D Mobile game</li>
   linkname: zombiezap.html
+  category: Unity Game
 
 - name: Astro Jump
   image: images/astrojump.png
   description: <li>Free Web Game!</li> 
   linkname: astrojump.html
+  category: Web Game
 
 - name: "Loot'n Crabs"
   image: images/lootncrabs.png
   description: <li>Free Web Game</li>
   linkname: lootncrabs.html
+  category: Web Game
 
 - name: "Brains"
   image: images/brains.png
   description: <li>C++</li><li>Ogre3D</li><li>Best Game QANTM 2012</li><li>Custom flocking AI.</li>
+  category: C++ Game
 
 - name: "1942 Clone"
   image: images/1942.png
   linkname: "https://github.com/nhold/1942"
   description: <li>Unity game</li><li>Open source</li>
+  category: Unity Game
