@@ -1,10 +1,13 @@
 ---
 layout: page
-title: Personal Projects
+title: Work
 ---
 
+A lot of my projects are under NDA and can't be posted in public but the ones I can talk about are here.
+<p>
+    
 {% for project in site.data.projects %}
-{% if project.type == "personal" %}
+{% if project.type == "work" %}
 {% cycle 'add row' : '<div class="row">', nil, nil %}
         <div class="col-sm-4">
             <div class="thumbnail">

@@ -7,20 +7,25 @@
             <a href="index.html">Myself</a>
             <a href="personal.html">Personal Projects</a>
             {% for project in site.data.projects %}
-                {% if project.linkname %}
-                    <div class="pr"><a href="{{ project.linkname }}">{{ project.name }}</a></div>
-                {% else %}
-                    <div class="pr"><a href="{{ project.name }}.html">{{ project.name }}</a></div>
-                {% endif %}
+                {% if project.type == "personal" %}
+                    {% if project.linkname == nil %}
+                        <div class="pr"><a href="{{ project.name | downcase}}.html">{{ project.name }}</a></div>
+                    {% else %}
+                        <div class="pr"><a href="{{ project.linkname }}">{{ project.name }}</a></div>
+                    {% endif %}
+                {% endif%}
             {% endfor %}
-            <a href="workunity.html">Work Projects - Unity</a>
-            <div class="pr"><a href="valkyrie.html">Valkyrie</a></div>
-            <div class="pr"><a href="cupcakegame.html">Cupcake Game</a></div>
-            <div class="pr"><a href="findersseekers.html">Finders Seekers</a></div>
-            <div class="pr"><a href="hottail.html">Hot Tail</a></div>
-            <div class="pr"><a href="photon.html">Photon</a></div>
-            <div class="pr"><a href="hondahrv.html">Honda HR-V</a></div>
-            <div class="pr"><a href="waterwheels.html">Water Wheels</a></div>
+
+            <a href="work.html">Work Projects - Unity</a>
+            {% for project in site.data.projects %}
+                {% if project.type == "work" %}
+                    {% if project.linkname == nil %}
+                        <div class="pr"><a href="{{ project.name | downcase}}.html">{{ project.name }}</a></div>
+                    {% else %}
+                        <div class="pr"><a href="{{ project.linkname }}">{{ project.name }}</a></div>
+                    {% endif %}
+                {% endif%}
+            {% endfor %}
         </li>
     </ul>
 </div>
