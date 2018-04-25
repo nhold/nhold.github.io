@@ -26,6 +26,16 @@
                     {% endif %}
                 {% endif%}
             {% endfor %}
+            <a href="wip.html">Personal WiP</a>
+            {% for project in site.data.projects %}
+                {% if project.type == "wip" %}
+                    {% if project.linkname == nil %}
+                        <div class="pr"><a href="{{ project.name | downcase}}.html">{{ project.name }}</a></div>
+                    {% else %}
+                        <div class="pr"><a href="{{ project.linkname }}">{{ project.name }}</a></div>
+                    {% endif %}
+                {% endif%}
+            {% endfor %}
         </li>
     </ul>
 </div>
