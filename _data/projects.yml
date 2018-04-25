@@ -1,7 +1,49 @@
 - name: Elma
-  image: image/ToastyEditor.png
-  description: <li>Updated to Unity 2018.4 LTS</li>
-  pitch: A co-op based multiplayer RPG. Pixel Art.
+  image: images/Elma.png
+  description: <li>Updated to Unity 2018.4 LTS</li><li>Fixed debug console to properly scroll to top on command.</li>
+  pitch: A co-op based multiplayer RPG. Pixel Art. Built in Unity.
+  progress: 1%
+  type: wip
+
+- name: Simple Tower Defense
+  image: images/STD.png
+  description: <li>Added a cliff tile and updated Level 1 with it.</li><li>The tile map editor can now reset the whole map to a tile.</li>
+  pitch: A simple tower defense. Built in C++ using SFML. 64-bit only.
+  progress: 20%
+  type: wip
+
+- name: Adventure Feat
+  image: images/AdventureFeat.png
+  description: <li>Added an expensive item in the shop.</li><li>Made the background a grid and scrolling</li>
+  pitch: A level based runner, collect items, kill enemies and level up.
+  progress: 35%
+  type: wip
+
+- name: Dimins
+  image: images/Dimins.png
+  description: <li>Removed old UI in combat.</li><li>Added a transition and UI system.</li>
+  pitch: A 3D monster collection and fighting game, built with Unity.
+  progress: 5%
+  type: wip
+
+- name: Shade I
+  image: images/Shade1.png
+  description: <li>Added inventory</li><li>Added an item to teleport you to a different scene.</li>
+  pitch: A 3D open world RPG, built in Unity.
+  progress: 2%
+  type: wip
+
+- name: Unnamed RTS
+  image: images/rts.png
+  description: <li>Added state actions</li><li>Added basic AI.</li>
+  pitch: A 3D open world RPG, built in Unity.
+  progress: 1%
+  type: wip
+
+- name: Unnamed FPS
+  image: images/fps.png
+  description: <li>Added building (Underground)</li><li>Basic first person controls.</li>
+  pitch: Build a base and keep it afloat while you spend money to go offworld to collect alien technology or rare elements. Build bases offworld.
   progress: 1%
   type: wip
 
