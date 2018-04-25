@@ -24,10 +24,10 @@ title: WIP Projects
                 </ul>
                 <div style="background-color: black;
                     border-radius: 8px;
-                    padding: 3px;"><div style=" background-color: #123464;
+                    padding: 3px;"><center style="color: gold">{{ project.progress }} Completed</center><div style=" background-color: #123464;
                     width: {{ project.progress }};
                     height: 4px;
-                    border-radius: 10px;"><center style="color: gold">{{ project.progress }} Completed</center></div></div>
+                    border-radius: 10px;"></div></div>
             </div>
         </div>
 {% cycle 'end row' : nil, nil, '</div>' %}
