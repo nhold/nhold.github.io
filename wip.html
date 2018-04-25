@@ -3,6 +3,40 @@ layout: page
 title: WIP Projects
 ---
 
+{% assign rows = site.data.projects | divided_by: 3.0 | ceil %}
+{% for i in (1..rows) %}
+  {% assign offset = forloop.index0 | times: 3 %}
+  <div class="row">
+    {% for post in site.data.projects limit:3 offset:offset %}
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            {% if project.linkname %}
+            <a href="{{ project.linkname }}" class="thumbnail">
+            {% else %}
+            <a href="{{ project.name | downcase }}.html" class="thumbnail">
+            {% endif %}
+            <img class="img-thumbnail" style="height:300px" src="{{ project.image }}" alt="">
+        </a>
+            <center>
+                <h3>{{ project.name }}</h3>
+                {{ project.pitch }}
+            </center>
+            <ul>
+                {{ project.description }}
+            </ul>
+            <center style="color: gold">{{ project.progress }} Completed</center>
+            <div style="background-color: black;
+                border-radius: 8px;
+                padding: 3px;"><div style=" background-color: #123464;
+                width: {{ project.progress }};
+                height: 4px;
+                border-radius: 10px;"></div></div>
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+{% endfor %}
+
 {% for project in site.data.projects %}
 {% if project.type == "wip" %}
 {% cycle 'add row' : '<div class="row">', nil, nil %}
