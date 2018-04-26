@@ -43,7 +43,7 @@
 - name: Unnamed FPS
   image: images/fps.png
   description: <li>Added building (Underground)</li><li>Basic first person controls.</li>
-  pitch: Build a base and keep it afloat while you spend money to go offworld to collect alien technology or rare elements. Build bases offworld.
+  pitch: Stargate, except you build your base and have to manage the cost of operation + building and defending offworld bases to make money.
   progress: 1%
   type: wip
 
