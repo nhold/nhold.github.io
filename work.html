@@ -8,7 +8,7 @@ A lot of my projects are under NDA and can't be posted in public but the ones I 
     
 {% for project in site.data.projects %}
 {% if project.type == "work" %}
-{% cycle 'add row' : '<div class="row">', nil, nil %}
+{% cycle 'add row' : '<div class="row">', '', '' %}
         <div class="col-sm-4">
             <div class="thumbnail">
                 {% if project.linkname %}
@@ -26,9 +26,9 @@ A lot of my projects are under NDA and can't be posted in public but the ones I 
                 </ul>
             </div>
         </div>
-{% cycle 'end row' : nil, nil, '</div>' %}
+{% cycle 'end row' : '', '', '</div>' %}
 {% endif %}
 {% endfor %}
-{% cycle 'end row' : nil, '</div>', '</div>', '</div>' %}
+{% cycle 'end row' : '', '</div>', '</div>', '</div>' %}
 
 
